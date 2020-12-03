@@ -9,7 +9,9 @@ public class HumanTest {
 		player1.attack(player2);
 		
 		System.out.println("Player 1 has attacked Player 2"); 
-		System.out.println("Player 2 now has health " + player2.getHealth()); 
+		System.out.println("Player 2 stats");
+		
+		player2.displayStats("health", "Player 2");
 		
 		player2.attack(player1); 
 		

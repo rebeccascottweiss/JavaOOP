@@ -19,6 +19,18 @@ public class Human {
 		human.setHealth(health-attack); 
 	}
 	
+	public void displayStats() {
+		System.out.printf("Health is: "+ this.getHealth() +"%n" + "Strength is: " + this.getStrength() +"%n" + "Intelligence is: " + this.getIntelligence() + "%n" + "Stealth is: " + this.getStealth() + "%n"); 
+		
+	}
+	
+	public void displayStats(String stat, String name) {
+		if(stat == "strength") {
+			int strength = this.getStrength(); 
+			System.out.printf("Strength of %s is %s.%n", name, strength);
+		}
+	}
+	
 	
 	public int getStrength() {
 		return strength;
